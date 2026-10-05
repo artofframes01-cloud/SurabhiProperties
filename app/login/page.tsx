@@ -133,11 +133,10 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setRole("owner")}
-                  className={`py-2 px-3 text-xs font-semibold rounded-md border text-center transition-all cursor-pointer ${
-                    role === "owner"
-                      ? "bg-[#173F35] text-white border-[#173F35]"
-                      : "bg-gray-50 text-gray-700 border-[#E2E0D8]"
-                  }`}
+                  className={`py-2 px-3 text-xs font-semibold rounded-md border text-center transition-all cursor-pointer ${role === "owner"
+                    ? "bg-[#173F35] text-white border-[#173F35]"
+                    : "bg-gray-50 text-gray-700 border-[#E2E0D8]"
+                    }`}
                 >
                   Owner Dashboard
                 </button>
@@ -145,11 +144,10 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setRole("admin")}
-                  className={`py-2 px-3 text-xs font-semibold rounded-md border text-center transition-all cursor-pointer ${
-                    role === "admin"
-                      ? "bg-[#173F35] text-white border-[#173F35]"
-                      : "bg-gray-50 text-gray-700 border-[#E2E0D8]"
-                  }`}
+                  className={`py-2 px-3 text-xs font-semibold rounded-md border text-center transition-all cursor-pointer ${role === "admin"
+                    ? "bg-[#173F35] text-white border-[#173F35]"
+                    : "bg-gray-50 text-gray-700 border-[#E2E0D8]"
+                    }`}
                 >
                   Admin Dashboard
                 </button>
@@ -164,13 +162,6 @@ export default function LoginPage() {
               </Button>
             </div>
           </form>
-
-          {/* Credentials hint */}
-          <div className="mt-4 p-3 bg-[#173F35]/5 border border-[#173F35]/20 rounded-lg text-xs text-[#173F35] space-y-1">
-            <p className="font-semibold">Owner Login Credentials:</p>
-            <p>Email: <span className="font-mono font-bold">{OWNER_EMAIL}</span></p>
-            <p>Password: <span className="font-mono">Shuvetha@46</span></p>
-          </div>
 
           {/* Quick Demo Access */}
           <div className="mt-4 pt-4 border-t border-[#E2E0D8] space-y-2">
